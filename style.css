@@ -1,8 +1,8 @@
 /* style.css */
 
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.7;
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
@@ -12,96 +12,105 @@ body {
 header {
   background: #2a2a2a;
   color: #ffffff;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem 2rem 1rem;
   text-align: center;
   border-bottom: 2px solid #333;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 header p {
   margin-top: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #cccccc;
 }
 
 nav {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 nav a.resume-button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 28px;
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   background-color: #007acc;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.4);
 }
 
 nav a.resume-button:hover {
   background-color: #005a99;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
 }
 
 main {
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 h2 {
   color: #66c0ff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid #333;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-ul li::before {
-  content: "✔";
-  color: #66c0ff;
-  margin-right: 8px;
+ul li {
+  margin-bottom: 0.7rem;
+  font-weight: 400;
+  color: #e0e0e0;
+  padding-left: 0;
 }
 
 .section-divider {
   border: none;
   height: 2px;
   background: linear-gradient(to right, transparent, #444, transparent);
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 
 .project {
   background: #2a2a2a;
-  padding: 1.2rem;
-  margin-bottom: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 
 .project h3 {
   margin-top: 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
 }
 
 .project a {
@@ -115,7 +124,7 @@ ul li::before {
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background: #2a2a2a;
   font-size: 0.9rem;
   color: #aaaaaa;
